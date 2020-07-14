@@ -1,3 +1,3 @@
 # nmigen-beginner
 
-Rough translations of selected portions of the ZipCPU tutorial into nMigen
+Familiarizing myself with nMigen by translating selected portions of the ZipCPU tutorial
