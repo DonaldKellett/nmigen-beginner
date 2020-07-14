@@ -1,0 +1,241 @@
+Info: constraining clock net 'clk100_0__p' to 100.00 MHz
+
+Info: Logic utilisation before packing:
+Info:     Total LUT4s:       170/43848     0%
+Info:         logic LUTs:    108/43848     0%
+Info:         carry LUTs:     62/43848     0%
+Info:           RAM LUTs:      0/21924     0%
+Info:          RAMW LUTs:      0/10962     0%
+
+Info:      Total DFFs:       152/43848     0%
+
+Info: Packing IOs..
+Info: clk100_0__p feeds TRELLIS_IO pin_clk100_0.clk100_0_0, removing $nextpnr_ibuf clk100_0__p.
+Info: pin 'pin_clk100_0.clk100_0_0' constrained to Bel 'X0/Y68/PIOC'.
+Info: led_0__io feeds TRELLIS_IO pin_led_0.led_0_0, removing $nextpnr_obuf led_0__io.
+Info: pin 'pin_led_0.led_0_0' constrained to Bel 'X90/Y11/PIOC'.
+Info: led_1__io feeds TRELLIS_IO pin_led_1.led_1_0, removing $nextpnr_obuf led_1__io.
+Info: pin 'pin_led_1.led_1_0' constrained to Bel 'X90/Y11/PIOB'.
+Info: led_2__io feeds TRELLIS_IO pin_led_2.led_2_0, removing $nextpnr_obuf led_2__io.
+Info: pin 'pin_led_2.led_2_0' constrained to Bel 'X90/Y14/PIOA'.
+Info: led_3__io feeds TRELLIS_IO pin_led_3.led_3_0, removing $nextpnr_obuf led_3__io.
+Info: pin 'pin_led_3.led_3_0' constrained to Bel 'X90/Y14/PIOC'.
+Info: led_4__io feeds TRELLIS_IO pin_led_4.led_4_0, removing $nextpnr_obuf led_4__io.
+Info: pin 'pin_led_4.led_4_0' constrained to Bel 'X90/Y17/PIOA'.
+Info: led_5__io feeds TRELLIS_IO pin_led_5.led_5_0, removing $nextpnr_obuf led_5__io.
+Info: pin 'pin_led_5.led_5_0' constrained to Bel 'X90/Y14/PIOD'.
+Info: led_6__io feeds TRELLIS_IO pin_led_6.led_6_0, removing $nextpnr_obuf led_6__io.
+Info: pin 'pin_led_6.led_6_0' constrained to Bel 'X90/Y14/PIOB'.
+Info: led_7__io feeds TRELLIS_IO pin_led_7.led_7_0, removing $nextpnr_obuf led_7__io.
+Info: pin 'pin_led_7.led_7_0' constrained to Bel 'X90/Y11/PIOD'.
+Info: rst_0__io feeds TRELLIS_IO pin_rst_0.rst_0_0, removing $nextpnr_ibuf rst_0__io.
+Info: pin 'pin_rst_0.rst_0_0' constrained to Bel 'X4/Y71/PIOB'.
+Info: Packing constants..
+Info: Packing carries...
+Info: Finding LUTFF pairs...
+Info: Packing LUT5-7s...
+Info: Finding LUT-LUT pairs...
+Info: Packing paired LUTs into a SLICE...
+Info: Packing unpaired LUTs into a SLICE...
+Info: Packing unpaired FFs into a SLICE...
+Info: Generating derived timing constraints...
+Info: Promoting globals...
+Info:     promoting clock net cd_sync_clk100_0__i to global network
+Info: Checksum: 0x3072e754
+
+Info: Annotating ports with timing budgets for target frequency 12.00 MHz
+Info: Checksum: 0x46012875
+
+Info: Device utilisation:
+Info: 	       TRELLIS_SLICE:   110/21924     0%
+Info: 	          TRELLIS_IO:    10/  245     4%
+Info: 	                DCCA:     1/   56     1%
+Info: 	              DP16KD:     0/  108     0%
+Info: 	          MULT18X18D:     0/   72     0%
+Info: 	              ALU54B:     0/   36     0%
+Info: 	             EHXPLLL:     0/    4     0%
+Info: 	             EXTREFB:     0/    2     0%
+Info: 	                DCUA:     0/    2     0%
+Info: 	           PCSCLKDIV:     0/    2     0%
+Info: 	             IOLOGIC:     0/  160     0%
+Info: 	            SIOLOGIC:     0/   85     0%
+Info: 	                 GSR:     1/    1   100%
+Info: 	               JTAGG:     0/    1     0%
+Info: 	                OSCG:     0/    1     0%
+Info: 	               SEDGA:     0/    1     0%
+Info: 	                 DTR:     0/    1     0%
+Info: 	             USRMCLK:     0/    1     0%
+Info: 	             CLKDIVF:     0/    4     0%
+Info: 	           ECLKSYNCB:     0/   10     0%
+Info: 	             DLLDELD:     0/    8     0%
+Info: 	              DDRDLL:     0/    4     0%
+Info: 	             DQSBUFM:     0/   10     0%
+Info: 	     TRELLIS_ECLKBUF:     0/    8     0%
+Info: 	        ECLKBRIDGECS:     0/    2     0%
+
+Info: Placed 11 cells based on constraints.
+Info: Creating initial analytic placement for 65 cells, random placement wirelen = 8349.
+Info:     at initial placer iter 0, wirelen = 131
+Info:     at initial placer iter 1, wirelen = 141
+Info:     at initial placer iter 2, wirelen = 141
+Info:     at initial placer iter 3, wirelen = 144
+Info: Running main analytical placer.
+Info:     at iteration #1, type TRELLIS_SLICE: wirelen solved = 135, spread = 643, legal = 846; time = 0.00s
+Info:     at iteration #2, type TRELLIS_SLICE: wirelen solved = 239, spread = 496, legal = 491; time = 0.00s
+Info:     at iteration #3, type TRELLIS_SLICE: wirelen solved = 264, spread = 496, legal = 552; time = 0.00s
+Info:     at iteration #4, type TRELLIS_SLICE: wirelen solved = 280, spread = 493, legal = 450; time = 0.00s
+Info:     at iteration #5, type TRELLIS_SLICE: wirelen solved = 285, spread = 572, legal = 656; time = 0.00s
+Info:     at iteration #6, type TRELLIS_SLICE: wirelen solved = 280, spread = 421, legal = 491; time = 0.00s
+Info:     at iteration #7, type TRELLIS_SLICE: wirelen solved = 286, spread = 425, legal = 510; time = 0.00s
+Info:     at iteration #8, type TRELLIS_SLICE: wirelen solved = 293, spread = 426, legal = 482; time = 0.00s
+Info:     at iteration #9, type TRELLIS_SLICE: wirelen solved = 286, spread = 422, legal = 511; time = 0.00s
+Info: HeAP Placer Time: 0.04s
+Info:   of which solving equations: 0.03s
+Info:   of which spreading cells: 0.00s
+Info:   of which strict legalisation: 0.00s
+
+Info: Running simulated annealing placer for refinement.
+Info:   at iteration #1: temp = 0.000000, timing cost = 94, wirelen = 450
+Info:   at iteration #5: temp = 0.000000, timing cost = 47, wirelen = 330
+Info:   at iteration #10: temp = 0.000000, timing cost = 57, wirelen = 321
+Info:   at iteration #15: temp = 0.000000, timing cost = 71, wirelen = 300
+Info:   at iteration #17: temp = 0.000000, timing cost = 78, wirelen = 300 
+Info: SA placement time 0.05s
+
+Info: Max frequency for clock '$glbnet$cd_sync_clk100_0__i': 231.75 MHz (PASS at 100.00 MHz)
+
+Info: Max delay <async>                             -> <async>: 3.88 ns
+Info: Max delay posedge $glbnet$cd_sync_clk100_0__i -> <async>: 2.22 ns
+
+Info: Slack histogram:
+Info:  legend: * represents 2 endpoint(s)
+Info:          + represents [1,2) endpoint(s)
+Info: [  5685,   9518) |************************************************************ 
+Info: [  9518,  13351) | 
+Info: [ 13351,  17184) | 
+Info: [ 17184,  21017) | 
+Info: [ 21017,  24850) | 
+Info: [ 24850,  28683) | 
+Info: [ 28683,  32516) | 
+Info: [ 32516,  36349) | 
+Info: [ 36349,  40182) | 
+Info: [ 40182,  44015) | 
+Info: [ 44015,  47848) | 
+Info: [ 47848,  51681) | 
+Info: [ 51681,  55514) | 
+Info: [ 55514,  59347) | 
+Info: [ 59347,  63180) | 
+Info: [ 63180,  67013) | 
+Info: [ 67013,  70846) | 
+Info: [ 70846,  74679) | 
+Info: [ 74679,  78512) | 
+Info: [ 78512,  82345) |***** 
+Info: Checksum: 0xdbf71541
+Info: Routing globals...
+Info:     routing clock net $glbnet$cd_sync_clk100_0__i using global 0
+
+Info: Routing..
+Info: Setting up routing queue.
+Info: Routing 592 arcs.
+Info:            |   (re-)routed arcs  |   delta    | remaining|       time spent     |
+Info:    IterCnt |  w/ripup   wo/ripup |  w/r  wo/r |      arcs| batch(sec) total(sec)|
+Info:        593 |        1        592 |    1   592 |         0|       0.07       0.07|
+Info: Routing complete.
+Info: Router1 time 0.07s
+Info: Checksum: 0xabb9d98e
+
+Info: Critical path report for clock '$glbnet$cd_sync_clk100_0__i' (posedge -> posedge):
+Info: curr total
+Info:  0.4  0.4  Source counter_TRELLIS_FF_Q_27_DI_LUT4_Z_SLICE.Q1
+Info:  1.1  1.4    Net counter[4] budget 2.978000 ns (84,13) -> (84,12)
+Info:                Sink counter_CCU2C_B0_2$CCU2_SLICE.B0
+Info:  0.4  1.8  Source counter_CCU2C_B0_2$CCU2_SLICE.FCO
+Info:  0.0  1.8    Net counter_CCU2C_B0_3_COUT[4] budget 0.000000 ns (84,12) -> (85,12)
+Info:                Sink counter_CCU2C_B0_1$CCU2_SLICE.FCI
+Info:  0.1  1.9  Source counter_CCU2C_B0_1$CCU2_SLICE.FCO
+Info:  0.0  1.9    Net counter_CCU2C_B0_3_COUT[6] budget 0.000000 ns (85,12) -> (85,12)
+Info:                Sink counter_CCU2C_B0$CCU2_SLICE.FCI
+Info:  0.1  1.9  Source counter_CCU2C_B0$CCU2_SLICE.FCO
+Info:  0.0  1.9    Net counter_CCU2C_B0_3_COUT[8] budget 0.000000 ns (85,12) -> (85,12)
+Info:                Sink counter_CCU2C_B0_14$CCU2_SLICE.FCI
+Info:  0.1  2.0  Source counter_CCU2C_B0_14$CCU2_SLICE.FCO
+Info:  0.0  2.0    Net counter_CCU2C_B0_3_COUT[10] budget 0.000000 ns (85,12) -> (85,12)
+Info:                Sink counter_CCU2C_B0_13$CCU2_SLICE.FCI
+Info:  0.1  2.0  Source counter_CCU2C_B0_13$CCU2_SLICE.FCO
+Info:  0.0  2.0    Net counter_CCU2C_B0_3_COUT[12] budget 0.000000 ns (85,12) -> (86,12)
+Info:                Sink counter_CCU2C_B0_12$CCU2_SLICE.FCI
+Info:  0.1  2.1  Source counter_CCU2C_B0_12$CCU2_SLICE.FCO
+Info:  0.0  2.1    Net counter_CCU2C_B0_3_COUT[14] budget 0.000000 ns (86,12) -> (86,12)
+Info:                Sink counter_CCU2C_B0_11$CCU2_SLICE.FCI
+Info:  0.1  2.1  Source counter_CCU2C_B0_11$CCU2_SLICE.FCO
+Info:  0.0  2.1    Net counter_CCU2C_B0_3_COUT[16] budget 0.000000 ns (86,12) -> (86,12)
+Info:                Sink counter_CCU2C_B0_10$CCU2_SLICE.FCI
+Info:  0.1  2.2  Source counter_CCU2C_B0_10$CCU2_SLICE.FCO
+Info:  0.0  2.2    Net counter_CCU2C_B0_3_COUT[18] budget 0.000000 ns (86,12) -> (86,12)
+Info:                Sink counter_CCU2C_B0_9$CCU2_SLICE.FCI
+Info:  0.1  2.2  Source counter_CCU2C_B0_9$CCU2_SLICE.FCO
+Info:  0.0  2.2    Net counter_CCU2C_B0_3_COUT[20] budget 0.000000 ns (86,12) -> (87,12)
+Info:                Sink counter_CCU2C_B0_8$CCU2_SLICE.FCI
+Info:  0.1  2.3  Source counter_CCU2C_B0_8$CCU2_SLICE.FCO
+Info:  0.0  2.3    Net counter_CCU2C_B0_3_COUT[22] budget 0.000000 ns (87,12) -> (87,12)
+Info:                Sink counter_CCU2C_B0_7$CCU2_SLICE.FCI
+Info:  0.1  2.4  Source counter_CCU2C_B0_7$CCU2_SLICE.FCO
+Info:  0.0  2.4    Net counter_CCU2C_B0_3_COUT[24] budget 0.000000 ns (87,12) -> (87,12)
+Info:                Sink counter_CCU2C_B0_6$CCU2_SLICE.FCI
+Info:  0.1  2.4  Source counter_CCU2C_B0_6$CCU2_SLICE.FCO
+Info:  0.0  2.4    Net counter_CCU2C_B0_3_COUT[26] budget 0.000000 ns (87,12) -> (87,12)
+Info:                Sink counter_CCU2C_B0_5$CCU2_SLICE.FCI
+Info:  0.3  2.7  Source counter_CCU2C_B0_5$CCU2_SLICE.F0
+Info:  0.8  3.6    Net counter_TRELLIS_FF_Q_DI_LUT4_Z_D[28] budget 3.006000 ns (87,12) -> (87,11)
+Info:                Sink counter_TRELLIS_FF_Q_3_DI_LUT4_Z_SLICE.B1
+Info:  0.2  3.8  Source counter_TRELLIS_FF_Q_3_DI_LUT4_Z_SLICE.F1
+Info:  0.1  3.9    Net counter_TRELLIS_FF_Q_3_DI budget 2.004000 ns (87,11) -> (87,11)
+Info:                Sink counter_TRELLIS_FF_Q_3_DI_LUT4_Z_SLICE.DI1
+Info:  0.0  3.9  Setup counter_TRELLIS_FF_Q_3_DI_LUT4_Z_SLICE.DI1
+Info: 1.9 ns logic, 2.0 ns routing
+
+Info: Critical path report for cross-domain path '<async>' -> '<async>':
+Info: curr total
+Info:  0.0  0.0  Source pin_clk100_0.clk100_0_0.O
+Info:  1.8  1.8    Net cd_sync_clk100_0__i budget 41.667000 ns (0,68) -> (3,34)
+Info:                Sink $gbuf$cd_sync_clk100_0__i.CLKI
+Info:  0.0  1.8  Source $gbuf$cd_sync_clk100_0__i.CLKO
+Info:  0.0  1.8    Net $glbnet$cd_sync_clk100_0__i budget 41.666000 ns (3,34) -> (4,70)
+Info:                Sink cd_sync.U$$2.CLK
+Info: 0.0 ns logic, 1.8 ns routing
+
+Info: Critical path report for cross-domain path 'posedge $glbnet$cd_sync_clk100_0__i' -> '<async>':
+Info: curr total
+Info:  0.4  0.4  Source pin_led_1_led_1__o$next_L6MUX21_Z_D1_L6MUX21_Z_D0_PFUMX_Z_SLICE.Q1
+Info:  1.3  1.7    Net pin_led_1_led_1__o budget 82.940002 ns (85,15) -> (90,11)
+Info:                Sink pin_led_1.led_1_0.I
+Info: 0.4 ns logic, 1.3 ns routing
+
+Info: Max frequency for clock '$glbnet$cd_sync_clk100_0__i': 257.60 MHz (PASS at 100.00 MHz)
+
+Info: Max delay <async>                             -> <async>: 1.83 ns
+Info: Max delay posedge $glbnet$cd_sync_clk100_0__i -> <async>: 1.70 ns
+
+Info: Slack histogram:
+Info:  legend: * represents 2 endpoint(s)
+Info:          + represents [1,2) endpoint(s)
+Info: [  6118,   9953) |************************************************************ 
+Info: [  9953,  13788) | 
+Info: [ 13788,  17623) | 
+Info: [ 17623,  21458) | 
+Info: [ 21458,  25293) | 
+Info: [ 25293,  29128) | 
+Info: [ 29128,  32963) | 
+Info: [ 32963,  36798) | 
+Info: [ 36798,  40633) | 
+Info: [ 40633,  44468) | 
+Info: [ 44468,  48303) | 
+Info: [ 48303,  52138) | 
+Info: [ 52138,  55973) | 
+Info: [ 55973,  59808) | 
+Info: [ 59808,  63643) | 
+Info: [ 63643,  67478) | 
+Info: [ 67478,  71313) | 
+Info: [ 71313,  75148) | 
+Info: [ 75148,  78983) | 
+Info: [ 78983,  82818) |***** 

@@ -1,0 +1,9 @@
+[dumpfile] "/home/dsleung/Documents/Archive/fv-beginner/ex-04-reqwalker/reqwalker.vcd"
+[dumpfile_size] 27882
+[treeopen] top.
+@22
+top.reqwalker.leds[7:0]
+top.reqwalker.counter[31:0]
+top.reqwalker.i_req
+top.reqwalker.o_busy
+top.reqwalker.state[3:0]
